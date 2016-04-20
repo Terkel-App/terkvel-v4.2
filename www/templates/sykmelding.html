@@ -1,0 +1,14 @@
+<ion-view title="Sykmelding">
+    <ion-content padding="true" class="center" style="background-color: #f1f4ed;">
+        <form class="list" style="width: 330px;">
+            <label class="item item-input" name="sykmeldingtekst">
+                <span class="input-label">Melding</span>
+                <textarea ng-model="elev.sykmelding" placeholder="Skriv melding her!" style="margin-right: 70px;"></textarea>
+            </label>
+            <ion-checkbox name="checkknapp" ng-model="checkboxmodel">Check-knapp</ion-checkbox>
+        </form>
+        <div class="spacer" style="height: 50;"></div>
+            <a ui-sref="tabselev.dashbord3" class="button button-balanced button-block">Send</a>
+            <a ui-sref="tabselev.dashbord3" class="button button-assertive button-block">Abryt</a>
+    </ion-content>
+</ion-view>

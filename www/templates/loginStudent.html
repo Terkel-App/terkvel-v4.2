@@ -1,0 +1,23 @@
+<ion-view title="Login - Student">
+    <ion-content padding="true" class="center" style="background-color: #f1f4ed">
+      <form class="list"  style="width: 330px;">
+            <ion-list>
+                <label class="item item-select" name="velgskole">
+                    <span class="input-label" ng-model="list_skole">Velg skole</span>
+                    <select>
+                      <option value="{{list_skole.option1}}">Option 1</option>
+                    </select>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label" style="width: 50px;">Brukernavn</span>
+                    <input type="text" placeholder="Username">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label" style="width: 90px;">Passord</span>
+                    <input type="password" placeholder="Password">
+                </label>
+            </ion-list>
+        </form>
+        <a ui-sref="tabselev.dashbord3" class="button button-balanced button-block  icon-right ion-log-in">Log in</a>
+    </ion-content>
+</ion-view>

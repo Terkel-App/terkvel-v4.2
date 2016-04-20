@@ -1,0 +1,16 @@
+<ion-view title="Dashbord-teacher">
+    <ion-content overflow-scroll="true" padding="true" class="has-header" style="background-color: #f1f4ed">
+        <ion-list>
+            <ion-item class="item-thumbnail-left">
+                <img>
+                <h2>Skole {{skole.name}}</h2>
+                <p>Navn {{larer.username}}</p>
+            </ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-item href="#/teachertabs/lekserPMinnelse">Lekser påminnelse</ion-item>
+            <ion-item href="#/teachertabs/sos">SOS</ion-item>
+            <ion-item ui-sref="login">Logg ut</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
